@@ -23,7 +23,15 @@ export default function App() {
         <Links />
       </head>
       <body className="min-h-screen bg-white dark:bg-slate-800 dark:text-white px-8">
-        <nav className="h-20 flex items-center border-2">this is header</nav>
+        <nav className="h-20 flex items-center justify-between">
+          <div>this is header</div>
+          <a
+            href="/contact-us"
+            className="p-3 border rounded-md border-primary bg-primary text-secondary"
+          >
+            <span>Contact Us</span>
+          </a>
+        </nav>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
